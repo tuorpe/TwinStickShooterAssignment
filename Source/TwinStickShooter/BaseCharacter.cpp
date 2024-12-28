@@ -48,6 +48,11 @@ void ABaseCharacter::CalculateDead()
 		isDead = false;
 }
 
+void ABaseCharacter::InstantDeath()
+{
+	isDead = true;
+}
+
 //Implement PostEditChangeProperty
 #if WITH_EDITOR
 void ABaseCharacter::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)

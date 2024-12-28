@@ -24,7 +24,10 @@ public:
 
 	//Calculate health function
 	UFUNCTION(BlueprintCallable, Category = "Base Character")
-		virtual void CalculateHealth(float delta);
+		virtual void CalculateH84ealth(float delta);	//Calculate health function
+
+	UFUNCTION(BlueprintCallable, Category = "Base Character")
+		virtual void InstantDeath();
 
 	//Editor-centric code for changing properties
 	#if WITH_EDITOR
